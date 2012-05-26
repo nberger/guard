@@ -71,6 +71,11 @@ module Guard
                   :aliases => '-B',
                   :banner => 'Turn off warning when Bundler is not present'
 
+    method_option :relativize_paths,
+                  :type => :boolean,
+                  :default => true,
+                  :banner => 'Turn on relativize paths'
+
     # Start Guard by initialize the defined Guards and watch the file system.
     # This is the default task, so calling `guard` is the same as calling `guard start`.
     #
